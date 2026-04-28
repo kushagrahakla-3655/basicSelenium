@@ -38,7 +38,7 @@
     nano file.txt
 
 14. find
-    find . -name file.txt
+    find . /home -name file.txt
 
 15. grep
     grep "hello" file.txt
@@ -54,12 +54,13 @@
 
 19. chown
     chown user file.txt
+    sudo chown user:user file.txt 
 
 20. ls -l
     ls -l
 
 21. ps
-    ps
+    ps -ef
 
 22. top
     top
@@ -72,12 +73,14 @@
 
 25. free
     free -h
+    free -m
 
 26. ping
     ping google.com
 
 27. wget
     wget https://example.com/file.zip
+    wget google.com/file.zip
 
 28. apt update
     sudo apt update
@@ -90,6 +93,7 @@
 
 31. tar
     tar -cvf file.tar folder/
+    tar -cvf data.tar data.txt
 
 32. zip
     zip file.zip file.txt
@@ -102,9 +106,11 @@
 
 35. docker
     docker run hello-world
+    docker run -d -p 8080:80 nginx
 
 36. jenkins
     jenkins
+    sudo systemcti start jenkins
 
 37. w
     w
@@ -114,6 +120,7 @@
 
 39. du
     du -sh folder/
+    du
 
 40. date
     date
