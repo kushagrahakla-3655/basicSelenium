@@ -1,23 +1,20 @@
 1. docker version
-   docker version
 
 2. docker login
-   docker login
 
 3. docker images
-   docker images
 
 4. docker pull
    docker pull ubuntu
 
 5. docker images --help
-   docker images --help
+   docker images -f "dangling=true"
 
 6. docker run
    docker run -it ubuntu
 
 7. docker ps
-   docker ps
+   docker ps -a
 
 8. docker start
    docker start <container_id>
@@ -32,7 +29,6 @@
     docker stop <container_id>
 
 12. docker stats
-    docker stats
 
 13. docker rm
     docker rm <container_id>
@@ -41,7 +37,7 @@
     docker inspect ubuntu
 
 15. docker rmi
-    docker rmi ubuntu
+    docker rmi ubuntu 
 
 16. docker commit
     docker commit <container_id> myimage:latest
